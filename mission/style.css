@@ -1,10 +1,26 @@
-h1, h2, image {
+h1, h2, #line {
     text-align: center;
 }
 
 h1 {
-    size: 75%
+    font-size: 50px;
+    margin-bottom: 20px;
 }
+
 h2 {
-    size: 10%
+    font-size: 17px;
+    color: rgb(0, 94, 184);
+    margin: 0;   
+}
+
+#line {
+    color:lightgrey;
+    margin-top: -12px;
+    margin-bottom: 50px;
+}
+
+#byui {
+    width: 20%;
+    margin: 55px auto 0;
+    display: block;
 }
