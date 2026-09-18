@@ -1,27 +1,29 @@
-/* body {
+body {
     font-family: 'Times New Roman', Times, serif;
-} */
+}
 
 h1, h2, #line {
     text-align: center;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 20px;
     letter-spacing: 3px;
+    font-weight: lighter;
 }
 
 h2 {
-    font-size: 17px;
+    font-size: 15px;
     color: rgb(0, 94, 184);
     margin: 0;   
+    letter-spacing: 3px;
 }
 
 #line {
     color:lightgrey;
     margin-top: -12px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 #byui {
