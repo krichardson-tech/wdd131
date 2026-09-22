@@ -18,6 +18,8 @@ h2 {
     color: rgb(0, 94, 184);
     margin: 0;   
     letter-spacing: 3px;
+    font-family: 'Georgia', Times, serif;
+    font-weight: lighter;
 }
 
 #line {
