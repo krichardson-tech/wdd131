@@ -13,6 +13,17 @@ update the display
 
 */
 
+function displayWelcome() {
+    const headerEl = document.querySelector("header");
+    const dayIndex = new Date().getDay();
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const message = `Happy ${days[dayIndex]}`
+    const messageEl = document.createElement("p");
+    messageEl.textContent = message;
+    headerEl.append(messageEl);
+}
+
+
 function renderNumber(element, index) {
     const number = document.createElement("span");
     number.textContent = index + 1;
@@ -25,4 +36,5 @@ function addIndex() {
     scriptureElements.forEach(renderNumber)
 }
 
-addIndex()
+addIndex();
+displayWelcome();
