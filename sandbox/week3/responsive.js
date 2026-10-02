@@ -8,9 +8,6 @@ for each element:
 figure out where/how we will dispaly the message...get a reference
 figure out what day it is
 update the display
-
-
-
 */
 
 function displayWelcome() {
@@ -35,6 +32,11 @@ function addIndex() {
     const scriptureElements = document.querySelectorAll(".scripture");
     scriptureElements.forEach(renderNumber)
 }
+
+function toggleMenu() {
+    document.querySelector("nav").classList.toggle("open");
+} 
+document.querySelector(".menu-btn").addEventListener("click", toggleMenu)
 
 addIndex();
 displayWelcome();
