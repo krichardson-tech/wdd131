@@ -36,8 +36,8 @@ h1 {
 nav a {
     padding: 20px;
     color: white;
-    display: none;
 }
+
 nav a:hover {
     text-decoration: none;
     color: rgb(221, 218, 218);
@@ -56,7 +56,7 @@ nav a:hover {
 
 nav.open a {
     display: block;
-}
+} 
 
 footer {
     padding: 0;
