@@ -4,7 +4,7 @@ function toggleMenu() {
 } 
 document.querySelector(".menu-btn").addEventListener("click", toggleMenu)
 
-// modal
+// MODAL
 const gallery = document.querySelector('.gallery');
 const modal = document.querySelector('dialog');
 const modalImage = modal.querySelector('img');
