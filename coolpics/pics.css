@@ -110,4 +110,19 @@ dialog {
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    dialog img {
+        width: 60%;
+        margin: 15vh auto;
+    }
+    .close-viewer {
+        position: absolute;
+        right: 15vh;
+    }
+    .viewer {
+        margin: 50px;
+        padding: 50px;
+    }
+    .viewer img {
+        max-width: 800px;
+    }
 }
