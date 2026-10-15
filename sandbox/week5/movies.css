@@ -58,7 +58,14 @@ header, footer {
         gap: 35px;
     }
 
-    
+    .movie {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .movie > img {
+        grid-row: 1/6; 
+    }
 
 }
           
