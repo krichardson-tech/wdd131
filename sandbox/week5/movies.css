@@ -52,6 +52,12 @@ header, footer {
 }
 
 @media (min-width: 600px) {
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+    }
+
     
 
 }
