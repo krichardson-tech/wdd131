@@ -1,0 +1,47 @@
+
+body {
+    font-family: serif,Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header, footer {
+
+    padding: 1rem;
+    text-align: center;
+}
+.main-nav {
+    display: flex;
+    justify-content: right;
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+}
+.main-nav li {
+    padding: 8px;
+}
+.main-nav a {
+    color: red;
+    text-decoration: none;
+}
+#book-list {
+    padding: 0 2rem;
+}
+.book p {
+    display: flex;
+    justify-content: right;
+}
+.book h2 {
+    color: red;
+}
+
+
+@media (min-width: 600px) {
+    .main-nav {
+        display: flex;
+        justify-content: right;
+        gap: 35px;
+    }
+
+}
+          
