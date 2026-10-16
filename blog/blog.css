@@ -86,7 +86,7 @@ footer {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 680px) {
     body {
         width: 100%;
         max-width: none;
