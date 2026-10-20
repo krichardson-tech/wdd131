@@ -30,6 +30,16 @@ console.log(gpaPoints);
 
 
 //activity 4 - filter
+const fruit = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
+function testLength(item) {
+    if(item.length < 6) {
+        return true;
+    }
+    else return false
 
+    // below also does the entirty of the if statement:
+    // return item.length < 6 ? true : false;
+}
+const shortFruit = fruit.filter(testLength);
 
-//activity 5 - index0f #
+//activity 5 - indexOf #
