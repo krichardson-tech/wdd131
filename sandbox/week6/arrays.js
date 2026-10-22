@@ -32,20 +32,20 @@ function convertToPoints(grade) {
 const gpaGrades = grades.map(convertToPoints); // use map to convert list to points
 console.log(gpaGrades);
 
-//activity 3 - reduce 
-const gpaPoints = grades.map(convertGradeToPoints);
-const pointsTotal = gpaPoints.reduce(function (total, item) {
-  return total + item;
-});
-const gpa = pointsTotal / gpaPoints.length;
+// //activity 3 - reduce ------------didn't do this in class
+// const gpaPoints = grades.map(convertGradeToPoints);
+// const pointsTotal = gpaPoints.reduce(function (total, item) {
+//   return total + item;
+// });
+// const gpa = pointsTotal / gpaPoints.length;
 
-    // // example 2
-    // // this is the same thing as above, but with an arrow function
-    // const pointsTotal = gpaPoints.reduce((total, item) => total + item);
-    // const gpa = pointsTotal / gpaPoints.length;
+//     // // example 2
+//     // // this is the same thing as above, but with an arrow function
+//     // const pointsTotal = gpaPoints.reduce((total, item) => total + item);
+//     // const gpa = pointsTotal / gpaPoints.length;
 
-    // // this could be further simplified as
-    // const gpa = gpaPoints.reduce((total, item) => total + item) / gpaPoints.length;
+//     // // this could be further simplified as
+//     // const gpa = gpaPoints.reduce((total, item) => total + item) / gpaPoints.length;
 
 //activity 4 - filter
 const fruit = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
@@ -60,8 +60,8 @@ function testLength(item) {
 }
 const shortFruit = fruit.filter(testLength);
 
-//activity 5 - indexOf #
-// improved luckyNumber
-const myArray = [12, 34, 21, 54];
-const luckyNumber = 21;
-let luckyIndex = myArray.indexOf(luckyNumber);
+// //activity 5 - indexOf # ------------didn't do this in class
+// // improved luckyNumber
+// const myArray = [12, 34, 21, 54];
+// const luckyNumber = 21;
+// let luckyIndex = myArray.indexOf(luckyNumber);
