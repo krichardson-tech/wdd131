@@ -47,6 +47,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 30px;
+    margin-bottom: 65px;
 }
 .book-details {
     grid-column: 2;
@@ -86,7 +87,7 @@ footer {
 }
 
 
-@media (min-width: 680px) {
+@media (min-width: 60px) {
     body {
         width: 100%;
         max-width: none;
