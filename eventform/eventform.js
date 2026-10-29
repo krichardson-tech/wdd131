@@ -2,17 +2,25 @@ const form = document.querySelector("#ticketForm");
 const personType = document.querySelector("#personType");
 const idContainer = document.querySelector("#idContainer");
 const id = document.querySelector("#id");
+const accessCode = document.querySelector("#accessCode");
 const output = document.querySelector("#output");
 
 // showing and hiding the student id
 function updateIdField() {
-  const value = personType.value;
+  const typeValue = personType.value;
 
-  if(value === "student") { 
+  if(typeValue === "student") { 
     idContainer.hidden = false; 
   }
   else {
     idContainer.hidden = true;
+  }
+
+  if(typeValue === "guest") { 
+    accessCodeContainer.hidden = false; 
+  }
+  else {
+    accessCodeContainer.hidden = true;
   }
   
 }
@@ -39,11 +47,28 @@ form.addEventListener("submit", function (event) {
   const type = form.personType.value;
   const eventDate = form.eventDate.value;
   const id = form.id.value.trim();
-
+  const accessCode = form.accessCode.value.trim();
   
+  //giving notification for if they dont put in the (correct)student id or access code
   if(personType.value === "student") {
     if(id === "") {
         output.textContent = "Please input your student ID.";
+        return;
+    }
+    else if(id.length != 9) {
+        output.textContent = "Student ID must be 9 digits.";
+        return;
+    }
+  }
+
+  if(personType.value === "guest") {
+    if(accessCode === "") {
+        output.textContent = "Please input your access code.";
+        return;
+    }
+
+    if(accessCode != "EVENT131") {
+        output.textContent = "Invalid access code.";
         return;
     }
   }

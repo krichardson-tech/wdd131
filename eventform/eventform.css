@@ -50,6 +50,10 @@ button:hover {
   display: none;
 }
 
+#accessCodeContainer[hidden] {
+  display: none;
+}
+
 #output {
   margin-top: 1rem;
   font-weight: bold;
