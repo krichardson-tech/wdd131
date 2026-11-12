@@ -16,9 +16,33 @@ max-width: 100%;
 
 .main-nav {
 list-style-type: none;
+display: flex;
+justify-content: flex-end;
+gap: 1em;
 }
 
 hr{
 margin-top: 50px;
 }
-              
+
+
+@media screen and (min-width: 600px){
+    .media-card {
+        display: flex;
+        gap: 1em;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;;
+        & > .media-card {
+            width: 45%;
+            align-items: center;
+        }
+        .media-card-image {
+            flex: 0 0 30%;
+        }
+    }
+
+}
