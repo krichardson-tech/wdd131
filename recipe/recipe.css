@@ -123,4 +123,34 @@ footer img {
     padding-bottom: 1em;
 }
 
+/* ------------------------------------------------------------- */
+@media screen and (min-width: 600px) {
+    /* .recipe-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .recipe-info {
+        padding: 0 1em 0 1em;
+    }
+
+    .recipe-description {
+        display: contents;
+    } */
+
 /* ----------------------------- */
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social {
+        order: 2
+    }
+
+    .link {
+        padding-bottom: 2em;
+    }
+}
