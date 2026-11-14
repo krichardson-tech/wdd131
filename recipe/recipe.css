@@ -86,7 +86,7 @@ h2 {
     color: #1989db;
 }
 
-img {
+.recipe-image {
     max-width: 100%;
     height: auto;
     padding-bottom: 1px;
@@ -125,18 +125,23 @@ footer img {
 
 /* ------------------------------------------------------------- */
 @media screen and (min-width: 600px) {
-    /* .recipe-card {
+    .recipe-card {
         display: flex;
         flex-direction: row;
     }
 
+    .recipe-image {
+        width: 50%;
+    }
+
     .recipe-info {
         padding: 0 1em 0 1em;
+        width: 50%;
     }
 
     .recipe-description {
         display: contents;
-    } */
+    }
 
 /* ----------------------------- */
 
