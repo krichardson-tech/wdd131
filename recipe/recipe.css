@@ -28,21 +28,35 @@ h1 {
     display: flex;
     justify-content: flex-start;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
+    padding: 2px;
 }
 
 .search img {
     width: 20px;
     height: 20px;
     margin-right: 0.5em;
-    padding: 0;
+    padding: 0 0 0 2px;
     margin: 0;
+    background-color: white;
 }
 
-button {
+.search-input {
+    width:100%;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    flex: 1;
+}
+
+.search-button {
+    display: flex;
     padding: 0;
     margin: 0;
+    border: none;
+    border-left: 1px solid black;
 }
+
 /* ----------------------------- */
 
 .line {
@@ -74,6 +88,13 @@ h2 {
 img {
     max-width: 100%;
     height: auto;
+    padding-bottom: 1px;
+}
+
+.recipe-button {
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 3px 6px 3px 6px;
 }
 
 .recipe-info {
