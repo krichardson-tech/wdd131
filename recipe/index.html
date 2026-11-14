@@ -24,7 +24,7 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <title>RecipeBook</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="recipe.css">
 </head>
 <body>
     <main>
@@ -37,24 +37,28 @@
             <input type="text" placeholder="Find a recipe" class="search-input">
             <button class="search-button"><img src="images/search.svg" alt="search icon"></button>
         </sections>
-        
+
+        <p class="line">______________________________________________</p> 
+
         <sections class="recipies">
             <section class="recipe-card">
                 <img src="images/apple-crisp.jpg" alt="recipe image" class="recipe-image">
-                <button class="recipe-button" aria-label="View Recipe">Dessert</button>
-                <h2 class="recipe-title">Apple Crisp</h2>
-                <span
-                class="rating"
-                role="img"
-                aria-label="Rating: 4 out of 5 stars"
-                >
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star">⭐</span>
-                <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p class="recipe-description">A brief description of the recipe goes here.</p>
+                <section class="recipe-info">
+                    <button class="recipe-button" aria-label="View Recipe">Dessert</button>
+                    <h2 class="recipe-title">Apple Crisp</h2>
+                    <span
+                    class="rating"
+                    role="img"
+                    aria-label="Rating: 4 out of 5 stars"
+                    >
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                    <p class="recipe-description">A brief description of the recipe goes here.</p>
+                </section>
             </section>
         </section>
     </main>

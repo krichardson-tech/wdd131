@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+
+h1 {
+    font-family: 'Amatic SC', cursive, Arial, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.heading {
+    display: flex;
+    padding: 0 2em 0 2em;
+    justify-content: center;
+}
+
+.heading img {
+    width: auto;
+    height: 65px;
+    margin-right: 0.5em;
+    padding-right: 0;
+}
+
+
+/* ----------------------------- */
+
+.search {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.search img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5em;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+}
+/* ----------------------------- */
+
+.line {
+    color: lightgray;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* ----------------------------- */
+
+.recipe-card {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive, Arial, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    margin: 0.5em 0 0 0;
+    color: #1989db;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recipe-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.recipe-description {
+    display: none;
+}
+
+/* ----------------------------- */
+
+
+
+/* ----------------------------- */
