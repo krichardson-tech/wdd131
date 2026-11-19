@@ -79,7 +79,6 @@ const hikes = [
  const simpleSort = simpleList.sort();
  console.log("simple", simpleList); 
 
- // Activity 1 - Sorting a list of strings
  function compareFn(a,b) {
   if (a.toLowerCase() < b.toLowerCase()) {
     return -1;
@@ -92,17 +91,15 @@ const hikes = [
 const anotherSort = simpleList.sort(compareFn)
 console.log("function", simpleList);
 
-// Activity 2 - Filtering a list of strings
 function searchList(list, query) {
-    function searchCallback(string) {
-        return string.toLowerCase().includes(query.toLowerCase());
-    }
+    function searchCallback(hike) {
+        return hike.name.toLowerCase().includes(query.toLowerCase()) || 
+        hike.description.toLowerCase().includes(query.toLowerCase()) ||
+        hike.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase()))
+    };
     const filteredList = list.filter(searchCallback);
-    const filtered2 = list.filter((string)=> string.toLowerCase()/includes(query.toLowerCase())) // this does the same as the searchCallback function above
     return filteredList; 
 }
 
-const filtered = searchList(simpleList, "b");
+const filtered = searchList(hikes, "mod");
 console.log(filtered);
-
-// Activity 3 - Sorting and Filtering a list of objects
