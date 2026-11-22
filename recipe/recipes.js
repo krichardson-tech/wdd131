@@ -1,3 +1,6 @@
+const recipeList = document.querySelector(".recipes");
+const searchInput = document.querySelector(".search-input");
+const searchButton = document.querySelector(".search-button");
 
 const recipes = [
 	{
@@ -280,4 +283,72 @@ const recipes = [
 		rating: 4
 	}
 ]            
+
+function searchRecipes(list, query){
+	function searchCallback(recipe) {
+        return recipe.name.toLowerCase().includes(query.toLowerCase()) || 
+        recipe.description.toLowerCase().includes(query.toLowerCase()) ||
+        recipe.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase()))
+    };
+    const filteredList = list.filter(searchCallback);
+    return filteredList;
+}
+
+function selectRecipe(recipe) {
+	let stars = "";
+
+	for (let i = 1; i <= 5; i++) {
+		if (i <= Math.round(recipe.rating)) 
+		{
+			stars += `<span aria-hidden="true" class="icon-star">⭐</span>`;
+		} 
+		else 
+		{
+			stars += `<span aria-hidden="true" class="icon-star-empty">☆</span>
+        </span>`;
+		}
+	}
+
+	return `
+		<section class="recipe-card">
+			<img
+				src="${recipe.image}"
+				alt="${recipe.name}"
+				class="recipe-image"
+			>
+
+			<section class="recipe-info">
+				<button class="recipe-button">${recipe.tags[0]}</button>
+				<h2 class="recipe-title">${recipe.name}</h2>
+				<span
+					class="rating"
+					role="img"
+					aria-label="${recipe.rating} out of 5 stars"
+					>
+					${stars}
+				</span>
+				<p class="recipe-description">${recipe.description}</p>
+			</section>
+	`;
+}
+
+const randomRecipe = Math.floor(Math.random() * recipes.length);
+displayRecipes([recipes[randomRecipe]]);
+
+searchButton.addEventListener("click", () => {
+	const query = searchInput.value;
+	const results = searchRecipes(recipes, query);
+
+	results.sort((a,b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
+	
+	displayRecipes(results);
+});
+
+function displayRecipes(list) {
+	recipeList.innerHTML = "";
+
+	list.forEach(recipe => {
+		recipeList.innerHTML += selectRecipe(recipe);
+	});
+}
 
